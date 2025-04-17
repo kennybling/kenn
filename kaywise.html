@@ -1,0 +1,48 @@
+<style>
+.button-sus {
+    background-color: rgb(205, 2, 2);
+    color: beige;
+    border: none;
+    height: 36px;
+    width: 105px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 9px;
+}
+
+.button-sus:hover{
+    opacity: 0.7;
+}
+
+
+.button-sus:active{
+    opacity: 0.3;
+}
+
+.join-button {
+    background-color: rgba(255, 255, 255, 0.759);
+    border-style: solid;
+    border: none;
+    height: 35px;
+    border-width: 76px;
+    border-radius: 2px;
+    cursor: pointer;
+    border-color: rgb(2, 20, 53);
+    color: blue;
+    padding: 10px;
+}
+
+.join-button:hover{
+    background: rgba(0, 0, 0, 0.1);
+}
+</style>
+
+
+<button class="button-sus" onclick="subscribe()">SUSCRIBE</button>
+<button class="join-button">JOIN</button>
+
+<script>
+    const subscribe = () => {
+        document.getElementsByClassName('button-sus')[0].innerHTML = "SUBSCRIBED"
+    }
+</script>
